@@ -135,7 +135,3 @@ This project is deployed on [Railway](https://railway.app).
 - **Backend:** [team-task-manager-production-27ce.up.railway.app](https://team-task-manager-production-27ce.up.railway.app)
 
 ---
-
-## License
-
-MIT
