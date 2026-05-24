@@ -1,0 +1,200 @@
+.App {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: #f4f6fb;
+  color: #20232a;
+}
+
+.container {
+  width: min(1080px, calc(100% - 32px));
+  margin: 24px auto;
+}
+
+.navbar {
+  background: #1f2a48;
+  color: #fff;
+  padding: 12px 24px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 1.35rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #cbd5f1;
+  text-decoration: none;
+}
+
+.nav-user {
+  color: #fff;
+}
+
+.nav-logout {
+  background: #ff6b6b;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-container,
+.projects-page,
+.tasks-page,
+.dashboard {
+  margin-top: 24px;
+}
+
+.auth-card,
+.project-form-card,
+.task-form-card,
+.task-card,
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(15,23,42,0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 32px auto;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font: inherit;
+  background: #fafbff;
+}
+
+button.btn-primary,
+button.btn-secondary {
+  background: #3b82f6;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.btn-secondary {
+  background: #475569;
+}
+
+button.btn-primary:disabled,
+button.btn-secondary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.stat-card {
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.stat-number.overdue {
+  color: #dc2626;
+}
+
+.user-breakdown,
+.status-breakdown {
+  display: grid;
+  gap: 8px;
+}
+
+.task-card,
+.project-card {
+  padding: 18px;
+}
+
+.task-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.loading {
+  padding: 24px;
+  text-align: center;
+}
+
+.task-status {
+  padding: 6px 12px;
+  border-radius: 9999px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.status-to-do { background: #64748b; }
+.status-in-progress { background: #f59e0b; }
+.status-done { background: #16a34a; }
